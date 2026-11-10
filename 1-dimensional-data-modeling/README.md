@@ -67,7 +67,13 @@ The primary key for this dataset is (`actor_id`, `film_id`). Check [sql-ddl](./s
     
 2. **Cumulative table generation query:** Write a query that populates the `actors` table one year at a time.
     ```sql
-    --Zach ingested the data per year for just a few year. I wanted to ingest the full data but did not want to use manual ingestion per year. So I used loop in a function. Also added information summary result at the end like how many rows inserted per year and total rows inserted across all years. 
+    /*
+    Zach ingested the data per year for just a few year.
+    I wanted to ingest the full data but did not want to use manual ingestion per year.
+    So I used loop in a function.
+    Also added information summary result at the end like
+    how many rows inserted per year and total rows inserted across all years. 
+    */
 
     -- wrap the ingestion using a function for loop
     create or replace function ingest_years(
