@@ -1,6 +1,6 @@
 # Apache Flink Homework
 
-Answered using PyFlink and PosgreSQL
+Answered using PyFlink and PostgreSQL
 
 - Create a Flink job that sessionizes the input data by IP address and host. Use a 5 minute gap. Check [pyflink script](./flinkanswer.py) or see below.
   ```python
